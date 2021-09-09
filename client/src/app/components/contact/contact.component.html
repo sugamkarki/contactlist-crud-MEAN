@@ -1,0 +1,11 @@
+<div class="card-container">
+  <mat-card class="card">
+    <mat-card-title>{{ user.first_name }} {{ user.last_name }}</mat-card-title>
+    <mat-card-subtitle> Phone: {{ user.phone }} </mat-card-subtitle>
+    <mat-card-actions>
+      <button mat-flat-button color="warn" (click)="delete(user._id)">
+        Delete
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</div>

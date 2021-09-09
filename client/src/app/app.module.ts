@@ -10,12 +10,14 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { AddComponent } from './components/add/add.component';
 import { FormsModule } from '@angular/forms';
 import { ToastrModule } from 'ngx-toastr';
+import { ContactComponent } from './components/contact/contact.component';
 @NgModule({
   declarations: [
     AppComponent,
     ContactsComponent,
     NavbarComponent,
     AddComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
