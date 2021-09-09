@@ -1,0 +1,25 @@
+{
+  "name": "contactlist",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Sugam karki",
+  "license": "Unlicensed",
+  "private": true,
+  "scripts": {
+    "dev": "nodemon dist/index.js",
+    "dev2": "nodemon --exec ts-node src/index.ts",
+    "watch": "tsc -w",
+    "start": "ts-node src/index.ts"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "mongoose": "^6.0.5",
+    "typescript": "^4.4.2",
+    "ts-node": "^10.2.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13"
+  }
+}

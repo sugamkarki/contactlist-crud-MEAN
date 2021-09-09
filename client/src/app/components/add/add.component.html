@@ -1,0 +1,55 @@
+<div class="form-container">
+  <mat-card class="add-form">
+    <mat-card-title class="title">Add A contact</mat-card-title>
+    <mat-form-field class="example-form-field" appearance="fill">
+      <mat-label>First input</mat-label>
+      <input matInput type="text" [(ngModel)]="contact.first_name" />
+      <button
+        *ngIf="contact.first_name"
+        matSuffix
+        mat-icon-button
+        aria-label="Clear"
+        (click)="contact.first_name = ''"
+      >
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-form-field>
+    <br />
+    <mat-form-field class="example-form-field" appearance="fill">
+      <mat-label>Last Name</mat-label>
+      <input matInput type="text" [(ngModel)]="contact.last_name" />
+      <button
+        *ngIf="contact.last_name"
+        matSuffix
+        mat-icon-button
+        aria-label="Clear"
+        (click)="contact.last_name = ''"
+      >
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-form-field>
+    <br />
+    <mat-form-field class="example-form-field" appearance="fill">
+      <mat-label>Phone</mat-label>
+      <input matInput type="text" [(ngModel)]="contact.phone" />
+      <button
+        *ngIf="contact.phone"
+        matSuffix
+        mat-icon-button
+        aria-label="Clear"
+        (click)="contact.phone = ''"
+      >
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-form-field>
+    <br />
+    <button
+      mat-raised-button
+      color="accent"
+      class="submit-btn"
+      (click)="submitForm()"
+    >
+      Submit
+    </button>
+  </mat-card>
+</div>

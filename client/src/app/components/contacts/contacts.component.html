@@ -1,0 +1,15 @@
+<div class="container">
+  <mat-card class="card" *ngFor="let contact of contacts">
+    <mat-card-title
+      >{{ contact.first_name }} {{ contact.last_name }}</mat-card-title
+    >
+    <mat-card-content>
+      <p>{{ contact.phone }}</p>
+    </mat-card-content>
+    <mat-divider inset></mat-divider>
+    <mat-card-actions>
+      <button mat-raised-button color="accent">Details</button>
+      <button mat-raised-button color="warn">Delete</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
